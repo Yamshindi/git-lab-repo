@@ -6,7 +6,8 @@ on:
 
 jobs:
   sync:
-    runs-on: ubuntu-latest
+    runs-on: 'node.16'
+    main: 'main.js'
     name: Git Repo Sync
     steps:
     - uses: actions/checkout@v2
